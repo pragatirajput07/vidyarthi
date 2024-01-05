@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+    .section{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(degree.jpg);
+        background-size: cover;
+        background-position: center;
+        padding:0 10 ;
+        position: relative;
+    }
+    
+.container{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+
+}
+@media only screen and (max-width: 700px) {
+    .content-section{
+        margin-left: 5%;
+        float: left;
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 700px) {
+.content-section{
+    margin-left: 5%;
+    float: left;
+    width: 80%;
+}
+}
+.image-section{
+    float: right;
+    width: 40%;
+    display: flex;
+    
+    
+}
+.image-section img{
+width: 100%;
+height: 100%;
+}
+.content-section .title{
+    text-transform: uppercase;
+    font: size 28px;
+    color: aliceblue;
+    
+}
+@media only screen and (max-width: 700px) {
+    .content-section h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 60px;
+    }
+    }
+@media only screen and (min-width: 700px) {
+.content-section h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+}
+.content-section .content h3{
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: aliceblue;
+}

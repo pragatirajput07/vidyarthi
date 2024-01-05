@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>image slider design </title>
+	<link rel = "stylesheet" href = "style.css">
+	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+	<div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+
+	  <!-- Slides -->
+	  <div class="swiper-slide"><img src="cs-it1.jpg"></div>
+      <div class="swiper-slide"><img src="ece4.jpg"></div>
+      <div class="swiper-slide"><img src="ee2.jpg"></div>
+      <div class="swiper-slide"><img src="ce2.jpg"></div>
+      <div class="swiper-slide"><img src="me1.jpg"></div>
+      <div class="swiper-slide"><img src="che2.jpg"></div>
+
+	  
+	
+	</div>
+	<!-- If we need pagination -->
+	<div class="swiper-pagination"></div>
+  
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+  <div class="change">
+  
+  <button onclick="window.location.href = 'cs.html';">CSIT</button>
+  <button onclick="window.location.href = 'ee.html';">EE</button>
+  <button onclick="window.location.href = 'ce.html';">CE</button>
+  <button onclick="window.location.href = 'ece.html';">ECE</button>
+  <button onclick="window.location.href = 'me.html';">ME</button>
+  <button onclick="window.location.href = 'che.html';">CHE</button>
+</div>
+  </div>
+  
+
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        display: 100,
+        disableoninteraction: false,
+    },
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+</script>
+
+</body>
+</html>
